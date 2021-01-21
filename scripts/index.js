@@ -14,7 +14,7 @@ var rangeValue = function(){
 
 var yearRange = function(){
     var newValue = yearSlider.value;
-    yearValue.value = newValue;
+    yearValue.value = newValue + " Years";
 }
 
 var returnRange = function(){
