@@ -1,6 +1,5 @@
 body{
     background: #020122;
- 
     margin: 0;
 }
 
@@ -59,6 +58,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 
@@ -78,6 +78,26 @@ body{
               0 8px 8px rgba(63, 62, 62, 0.11), 
               0 16px 16px rgba(63, 62, 62, 0.11), 
               0 32px 32px rgba(63, 62, 62, 0.11);
+}
+
+.investmentresult{
+    background-color: #fafafa;
+    border-radius: 20px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 40px;
+    box-shadow: 0 1px 1px rgba(63, 62, 62, 0.11), 
+              0 2px 2px rgba(63, 62, 62, 0.11), 
+              0 4px 4px rgba(63, 62, 62, 0.11), 
+              0 8px 8px rgba(63, 62, 62, 0.11), 
+              0 16px 16px rgba(63, 62, 62, 0.11), 
+              0 32px 32px rgba(63, 62, 62, 0.11);
+    color: #020122;
 }
 
 

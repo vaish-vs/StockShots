@@ -77,7 +77,7 @@
               
               <h4 class="wish">Number of years</h4>
               <input type="text" value="1" class="inv-value" id="yearvalue"><br>
-              <input type="range" min="1" max="30" value="1" class="slider" step="1" id="yearslider">
+              <input type="range" min="1" max="30" value="1 Years" class="slider" step="1" id="yearslider">
               <h6 id="subtext">1 Year</h6>
               <h6 id="subtext" class="subtextright">30 Years</h6><br><br>
 
@@ -86,8 +86,15 @@
               <input type="range" min="1" max="20" value="1%" class="slider" step="1%" id="returnslider">
               <h6 id="subtext">1%</h6>
               <h6 id="subtext" class="subtextright">20%</h6>
+            </div>
 
+            <div class="investmentresult">
+              <h5>Invested Amount</h5>
+              <h1 class="investedamount">..</h1>
 
+              <h5>Wealth Created</h5>
+              <h1 class="wealthcreated">..</h1>
+            </div>
             </div>
       </section>
 
@@ -108,11 +115,10 @@
       <script>
         AOS.init({
           duration: 650,
-          delay: 100,
+          delay: 150,
         });
       </script>
       <script src="scripts/index.js"></script>
       
 </body>
-
 </html>
