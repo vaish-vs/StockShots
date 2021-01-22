@@ -65,35 +65,35 @@
 <!------------------------------Investment Calculator section------------------------------------->
 <!------------------------------------------------------------------------------------------------>
       <section >
-        <div class="container-fluid" id="section2" data-aos="fade-up" > 
-            <div class="investmentcalc">
+        <div class="container-fluid" id="section2"> 
+            <div class="investmentcalc" data-aos="fade-up" >
               <h3 class="invcalc-heading">Systematic Investment Planner</h3>
               
               <h4 class="wish">I wish to invest per month</h4>
               <input type="text" value="5000" class="inv-value" id="inv-value"><br>
-              <input type="range" min="5000" max="50000" value="5000" class="slider" step="500" id="invslider">
-              <h6 id="subtext">5K</h6>
+              <input type="range" min="500" max="50000" value="5000" class="slider" step="500" id="invslider">
+              <h6 id="subtext">500</h6>
               <h6 id="subtext" class="subtextright">50K</h6><br><br>
               
               <h4 class="wish">Number of years</h4>
               <input type="text" value="1" class="inv-value" id="yearvalue"><br>
-              <input type="range" min="1" max="30" value="1 Years" class="slider" step="1" id="yearslider">
+              <input type="range" min="1" max="30" value="1" class="slider" step="1" id="yearslider">
               <h6 id="subtext">1 Year</h6>
               <h6 id="subtext" class="subtextright">30 Years</h6><br><br>
 
               <h4 class="wish">Expected Rate of Return</h4>
               <input type="text" value="1" class="inv-value" id="returnvalue"><br>
-              <input type="range" min="1" max="20" value="1%" class="slider" step="1%" id="returnslider">
+              <input type="range" min="1" max="20" value="1" class="slider" step="1" id="returnslider">
               <h6 id="subtext">1%</h6>
               <h6 id="subtext" class="subtextright">20%</h6>
             </div>
 
-            <div class="investmentresult">
-              <h5>Invested Amount</h5>
-              <h1 class="investedamount">..</h1>
+            <div class="investmentresult" data-aos="fade-up">
+              <h5 class="investedamountheading"><b>Invested Amount</b></h5>
+              <h1 class="investedamount">-</h1><br>
 
-              <h5>Wealth Created</h5>
-              <h1 class="wealthcreated">..</h1>
+              <h5 class="wealthcreatedheading"><b>Wealth Created</b></h5>
+              <h1 class="wealthcreated">-</h1>
             </div>
             </div>
       </section>
@@ -104,17 +104,53 @@
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------------Footer Section------------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-      <section>
-        <div class="container-fluid"  id="footer"> 
-          <h1>New Section</h1>
-        </div>
-      </section>
-    
 
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Stockshots</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto: stockshotsin@gmail.com">Email</a></li>
+          <li><p>Blah Blah,<br>Bengaluru - 560027,<br>Karnataka</p></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/stockshotsinc" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/stockshotsin/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      
+
+
+<!--Loading Scripts-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init({
-          duration: 650,
+          duration: 900,
           delay: 150,
         });
       </script>
