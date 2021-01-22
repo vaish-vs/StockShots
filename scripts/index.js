@@ -20,7 +20,7 @@ function nFormatter(num, digits) {
       { value: 1, symbol: "" },
       { value: 1E3, symbol: "K" },
       { value: 1E5, symbol: "L" },
-      { value: 1E9, symbol: "G" },
+      { value: 1E7, symbol: "Cr" },
       { value: 1E12, symbol: "T" },
       { value: 1E15, symbol: "P" },
       { value: 1E18, symbol: "E" }
