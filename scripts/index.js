@@ -1,8 +1,8 @@
 const investmentValue = document.querySelector("#inv-value")
 const invSlider = document.querySelector("#invslider")
 
-const yearValue = document.querySelector("#yearvalue")
-const yearSlider = document.querySelector("#yearslider")
+const yearValue = document.querySelector("#yearvalue")  
+const yearSlider = document.querySelector("#yearslider") 
 
 const returnValue = document.querySelector("#returnvalue")
 const returnSlider = document.querySelector("#returnslider")
@@ -90,16 +90,46 @@ var returnRange = function(){
 var invValueUpdate = function(){
     var realValue = investmentValue.value;
     invSlider.value = realValue;
+
+      //Calculating Invested Amount
+      investedamount = invSlider.value * 12 * yearSlider.value;
+      investedamountText.innerHTML = nFormatter(investedamount, 2);
+  
+      //Calculating Wealth Created
+      interestRate = returnSlider.value/1200;
+      createdWealth = invSlider.value * ((Math.pow((1+interestRate), yearSlider.value*12) - 1)/interestRate) * (1+interestRate);
+      //createdWealthText.innerHTML = Math.round(createdWealth/1000)*1000;
+      createdWealthText.innerHTML = nFormatter(createdWealth, 2);
 }
 
 var yearValueUpdate = function(){
     var realValue = yearValue.value;
     yearSlider.value = realValue;
+
+      //Calculating Invested Amount
+      investedamount = invSlider.value * 12 * yearSlider.value;
+      investedamountText.innerHTML = nFormatter(investedamount, 2);
+  
+      //Calculating Wealth Created
+      interestRate = returnSlider.value/1200;
+      createdWealth = invSlider.value * ((Math.pow((1+interestRate), yearSlider.value*12) - 1)/interestRate) * (1+interestRate);
+      //createdWealthText.innerHTML = Math.round(createdWealth/1000)*1000;
+      createdWealthText.innerHTML = nFormatter(createdWealth, 2);
 }
 
 var returnValueUpdate = function(){
     var realValue = returnValue.value;
     returnSlider.value = realValue;
+
+      //Calculating Invested Amount
+      investedamount = invSlider.value * 12 * yearSlider.value;
+      investedamountText.innerHTML = nFormatter(investedamount, 2);
+  
+      //Calculating Wealth Created
+      interestRate = returnSlider.value/1200;
+      createdWealth = invSlider.value * ((Math.pow((1+interestRate), yearSlider.value*12) - 1)/interestRate) * (1+interestRate);
+      //createdWealthText.innerHTML = Math.round(createdWealth/1000)*1000;
+      createdWealthText.innerHTML = nFormatter(createdWealth, 2);
 }
 
 
@@ -107,6 +137,7 @@ var returnValueUpdate = function(){
 invSlider.addEventListener("input", rangeValue);
 yearSlider.addEventListener("input", yearRange);
 returnSlider.addEventListener("input", returnRange);
+
 investmentValue.addEventListener("change", invValueUpdate);
 yearValue.addEventListener("change", yearValueUpdate);
 returnValue.addEventListener("change", returnValueUpdate);

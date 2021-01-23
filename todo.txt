@@ -2,3 +2,5 @@ Login and Register at top right corner.
 Investment calculator (Slider)
 
 UP and down and left and right
+
+collect data from spreadsheet
